@@ -1,0 +1,6 @@
+playwright==1.42.0
+beautifulsoup4
+python-dotenv
+google-generativeai
+openpyxl
+pypdf
