@@ -1,0 +1,51 @@
+{
+  "name": "Rahul Baghel",
+  "roles": [
+    "Java Backend Developer",
+    "Software Developer"
+  ],
+  "skills": [
+    "Python",
+    "Java",
+    "JavaScript",
+    "SQL",
+    "C",
+    "Network security",
+    "Intrusion Detection",
+    "IT Forensics",
+    "Secure Coding Principles",
+    "Threat Analysis",
+    "Pandas",
+    "NumPy",
+    "Machine Learning",
+    "MySQL",
+    "PostgreSQL",
+    "NoSQL",
+    "Agile",
+    "Scrum",
+    "CI/CD",
+    "Figma",
+    "React Native",
+    "Express.js",
+    "Supabase",
+    "Google Cloud Platform (GCP)",
+    "Flask",
+    "XML"
+  ],
+  "experience_years": 3,
+  "location": "Dun Laoghaire, Ireland",
+  "education": [
+    "B.Sc. Computer Science, Technological University Dublin (2.1 Honours)"
+  ],
+  "keywords": [
+    "Backend Development",
+    "Cyber Security",
+    "Machine Learning",
+    "Mobile Development",
+    "API Integration",
+    "Network Intrusion Detection",
+    "Full Lifecycle Development",
+    "Android Development",
+    "Cloud Platforms"
+  ]
+}

@@ -31,12 +31,27 @@ def build_profile():
     text = read_cv_text("cv.pdf")
 
     response = client.models.generate_content(
-        model="gemini-1.5-flash",
-        contents=PROMPT + "\nCV:\n" + text
+        model="models/gemini-3-flash-preview",
+        contents=[
+            {
+                "role": "user",
+                "parts": [{
+                    "text": PROMPT + "\nCV:\n" + text + "\n\nReturn ONLY valid JSON. No explanation."
+                }]
+            }
+        ],
+        config={
+            "temperature": 0.1,
+            "response_mime_type": "application/json"
+        }
     )
 
     raw = response.text.strip()
-    profile = json.loads(raw)
+    start = raw.find("{")
+    end = raw.rfind("}") + 1
+    raw_json = raw[start:end]
+
+    profile = json.loads(raw_json)
 
     os.makedirs("data", exist_ok=True)
     with open("data/cv.json", "w", encoding="utf-8") as f:
