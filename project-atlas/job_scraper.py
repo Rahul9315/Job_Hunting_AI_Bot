@@ -59,8 +59,8 @@ def load_context(browser):
     return browser.new_context()
 
 def scrape_linkedin(page, query):
-    url = f"https://www.linkedin.com/jobs/search/?keywords={query.replace(' ', '%20')}&location=Ireland"
-    #url = f"https://www.linkedin.com/jobs/search/?keywords={query.replace(' ', '%20')}&location=Ireland&f_AL=true" # easy apply jobs only link
+    #url = f"https://www.linkedin.com/jobs/search/?keywords={query.replace(' ', '%20')}&location=Ireland" # all jobs including easy apply
+    url = f"https://www.linkedin.com/jobs/search/?keywords={query.replace(' ', '%20')}&location=Ireland&f_AL=true" # easy apply jobs only link
     page.goto(url)
     page.wait_for_timeout(8000)
 
