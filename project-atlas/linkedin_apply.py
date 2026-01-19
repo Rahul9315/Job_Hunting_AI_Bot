@@ -57,23 +57,29 @@ def run():
             human_sleep(3, 6)
             human_scroll(page)
 
-            page.screenshot(path="debug0.png", full_page=True)
+            page.screenshot(path="debug0/1.png", full_page=True)
 
-            if page.locator("text=Easy Apply").count() == 0:
+            easy_apply = page.locator("button.jobs-apply-button")
+
+            if easy_apply.count() == 0:
                 log(job, "Skipped", "No Easy Apply")
-                page.screenshot(path="debug0/1.png", full_page=True)
                 continue
 
-            try:
-                page.locator("text=Easy Apply").first.click()
-                human_sleep(2, 4)
-                page.screenshot(path="debug0/2.png", full_page=True)
+            easy_apply.first.click()
+            human_sleep(2, 4)
 
+
+            # Wait for Easy Apply modal
+            page.wait_for_selector("div.jobs-easy-apply-modal", timeout=15000)
+            page.screenshot(path="debug0/3.png", full_page=True)
+
+
+            try:
                 # Auto-fill common fields if present
                 if page.locator("input[name='phoneNumber']").count():
                     human_type(page, "input[name='phoneNumber']", os.getenv("PHONE", ""))
                 
-                page.screenshot(path="debug1.png", full_page=True)
+                page.screenshot(path="debug0/4.png", full_page=True)
 
 
                 # Select already uploaded resume (cv.pdf)
@@ -83,20 +89,35 @@ def run():
 
 
                 # Submit flow
-                if page.locator("button:has-text('Submit')").count():
-                    page.locator("button:has-text('Submit')").click()
-                    human_sleep(3, 5)
-                    log(job, "Applied", "Success")
-                    applied_today += 1
+                # Step engine: Next → Next → Review → Submit
+                while True:
+                    if page.locator("button:has-text('Submit')").count():
+                        page.locator("button:has-text('Submit')").click()
+                        human_sleep(3, 5)
+                        log(job, "Applied", "Success")
+                        applied_today += 1
+                        page.screenshot(path="debug0/5.png", full_page=True)
+                        break
 
-                    page.screenshot(path="debug2.png", full_page=True)
-                else:
-                    log(job, "Manual Review", "Extra questions")
-                    page.screenshot(path="debug3.png", full_page=True)
+                    elif page.locator("button[data-easy-apply-next-button]").count():
+                        page.locator("button[data-easy-apply-next-button]").click()
+                        human_sleep(3, 5)
+                        page.screenshot(path="debug0/step.png", full_page=True)
+
+                    elif page.locator("button:has-text('Review')").count():
+                        page.locator("button:has-text('Review')").first.click()
+                        human_sleep(3, 5)
+
+                    else:
+                        log(job, "Manual Review", "Unknown step")
+                        page.screenshot(path="debug0/unknown.png", full_page=True)
+                        break
+
 
 
             except Exception as e:
                 log(job, "Manual Review", str(e))
+                page.screenshot(path="debug0/7.png", full_page=True)
 
 
             human_sleep(8, 14)
