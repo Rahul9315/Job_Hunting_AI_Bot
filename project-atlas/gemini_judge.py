@@ -46,7 +46,7 @@ def run():
 
     approved = []
 
-    """
+    
     for job in jobs[:2]:
         prompt = f"{PROMPT}\n\nCV:\n{json.dumps(cv, indent=2)}\n\nJOB LINK:\n{job['link']}"
         response = client.models.generate_content(
@@ -86,7 +86,7 @@ def run():
             fake["link"] = job["link"]
             approved.append(fake)
             continue
-
+    """
     # real Gemini call goes here later 
     # this for loop above this comment has to be removed
      
