@@ -10,17 +10,21 @@ FILE = "data/applied.xlsx"
 
 def log(job, status):
     os.makedirs("data", exist_ok=True)
+
     if not os.path.exists(FILE):
         wb = Workbook()
         ws = wb.active
-        ws.append(["Date", "Platform", "Company", "Role", "Location", "Status", "Link"])
+        ws.append(["Date", "Time", "Platform", "Company", "Role", "Location", "Status", "Link"])
         wb.save(FILE)
-
 
     wb = load_workbook(FILE)
     ws = wb.active
+
+    now = datetime.now()
+
     ws.append([
-        datetime.now().strftime("%Y-%m-%d"),
+        now.strftime("%d-%m-%y"),      # Date → 19-01-26
+        now.strftime("%H:%M"),         # Time → 18:30
         job.get("platform"),
         job.get("company"),
         job.get("title"),
@@ -28,4 +32,5 @@ def log(job, status):
         status,
         job.get("link")
     ])
+
     wb.save(FILE)
