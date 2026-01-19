@@ -67,7 +67,7 @@ def run():
         if data["apply"]:
             approved.append(data)
 
-    ###   """
+    """
          
     for job in jobs[:2]:
 
@@ -87,7 +87,8 @@ def run():
             approved.append(fake)
             continue
 
-    # real Gemini call goes here later
+    # real Gemini call goes here later 
+    # this for loop above this comment has to be removed
      
 
     os.makedirs("data", exist_ok=True)
