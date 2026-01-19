@@ -6,6 +6,8 @@ from google import genai
 
 load_dotenv()
 
+TEST_MODE = True
+
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 PROMPT = """
@@ -44,6 +46,7 @@ def run():
 
     approved = []
 
+    """
     for job in jobs[:2]:
         prompt = f"{PROMPT}\n\nCV:\n{json.dumps(cv, indent=2)}\n\nJOB LINK:\n{job['link']}"
         response = client.models.generate_content(
@@ -63,6 +66,29 @@ def run():
 
         if data["apply"]:
             approved.append(data)
+
+    ###   """
+         
+    for job in jobs[:2]:
+
+        if TEST_MODE:
+            fake = {
+                "title": "Junior Software Engineer",
+                "company": "Test Company Ltd",
+                "location": "Ireland",
+                "skills": ["Python", "JavaScript", "Docker"],
+                "salary": "€35,000 - €45,000",
+                "visa_sponsorship": True,
+                "apply": True,
+                "reason": "Entry level role matching Rahul's profile"
+            }
+            fake["platform"] = job["platform"]
+            fake["link"] = job["link"]
+            approved.append(fake)
+            continue
+
+    # real Gemini call goes here later
+     
 
     os.makedirs("data", exist_ok=True)
     with open("data/jobs_filtered.json", "w", encoding="utf-8") as f:

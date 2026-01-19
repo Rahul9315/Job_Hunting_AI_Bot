@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Junior Software Engineer",
+    "company": "Test Company Ltd",
+    "location": "Ireland",
+    "skills": [
+      "Python",
+      "JavaScript",
+      "Docker"
+    ],
+    "salary": "\u20ac35,000 - \u20ac45,000",
+    "visa_sponsorship": true,
+    "apply": true,
+    "reason": "Entry level role matching Rahul's profile",
+    "platform": "LinkedIn",
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4354716964&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+  },
+  {
+    "title": "Junior Software Engineer",
+    "company": "Test Company Ltd",
+    "location": "Ireland",
+    "skills": [
+      "Python",
+      "JavaScript",
+      "Docker"
+    ],
+    "salary": "\u20ac35,000 - \u20ac45,000",
+    "visa_sponsorship": true,
+    "apply": true,
+    "reason": "Entry level role matching Rahul's profile",
+    "platform": "LinkedIn",
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4363664206&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+  }
+]
