@@ -8,13 +8,13 @@ FILE = "data/applied.xlsx"
 
 
 
-def log(job, status):
+def log(job, status , note=""):
     os.makedirs("data", exist_ok=True)
 
     if not os.path.exists(FILE):
         wb = Workbook()
         ws = wb.active
-        ws.append(["Date", "Time", "Platform", "Company", "Role", "Location", "Status", "Link"])
+        ws.append([ "Company", "Role", "Location", "Platform","Status","Note","Date", "Time",  "Link"])
         wb.save(FILE)
 
     wb = load_workbook(FILE)
@@ -23,13 +23,14 @@ def log(job, status):
     now = datetime.now()
 
     ws.append([
-        now.strftime("%d-%m-%y"),      # Date → 19-01-26
-        now.strftime("%H:%M"),         # Time → 18:30
-        job.get("platform"),
         job.get("company"),
         job.get("title"),
         job.get("location"),
+        job.get("platform"),
         status,
+        note,
+        now.strftime("%d-%m-%y"),      # Date → 19-01-26
+        now.strftime("%H:%M"),   # Time → 18:30
         job.get("link")
     ])
 
