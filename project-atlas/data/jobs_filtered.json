@@ -1,41 +1,25 @@
 [
   {
-    "title": "Software Engineer I",
-    "company": "HubSpot",
-    "location": "Dublin, Ireland",
+    "title": "Full Stack Software Engineer",
+    "company": "Core Optimisation",
+    "location": "",
     "skills": [
-      "Java",
-      "JavaScript",
-      "React",
-      "SQL",
-      "Distributed Systems",
-      "Python"
+      "Next.js",
+      "shadcn/ui",
+      "Azure Functions",
+      "Azure API Management",
+      "Cosmos DB",
+      "CI/CD",
+      "Bicep",
+      "GDPR",
+      "Data security",
+      "API Management"
     ],
-    "salary": "Not specified",
-    "visa_sponsorship": true,
+    "salary": "",
+    "visa_sponsorship": false,
     "apply": true,
-    "reason": "HubSpot's 'Engineer I' is specifically designed for new graduates and juniors. As a large multinational, they are a registered sponsor for Critical Skills Employment Permits in Ireland. Rahul's background in Java, JavaScript, and his TU Dublin degree make him a strong candidate for this entry-level pipeline.",
+    "reason": "This is a software engineering role focused on full-stack development and backend services. Although the role specifies 5+ years of experience and an Azure stack, it falls within Rahul's field of software development, and the rules dictate applying unless the role is clearly not software engineering.",
     "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4341592324&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "title": "Junior Software Engineer",
-    "company": "Mastercard",
-    "location": "Dublin, Ireland",
-    "skills": [
-      "Java",
-      "Spring Boot",
-      "RESTful APIs",
-      "SQL",
-      "Cloud Computing",
-      "Agile",
-      "Object-Oriented Programming"
-    ],
-    "salary": "Not disclosed",
-    "visa_sponsorship": true,
-    "apply": true,
-    "reason": "This is a perfect entry-level match for Rahul's Java background and TU Dublin degree. Mastercard is a large multinational known for providing visa sponsorship for high-potential technical talent in Ireland.",
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4353715994&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4353854807&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
   }
 ]

@@ -89,16 +89,20 @@ def scrape_linkedin(page, query):
     count = cards.count()
     print(f"LinkedIn cards found: {count}")
 
+    
     jobs = []
 
-    for i in range(min(25, count)):
+    for i in range(min(5, count)):
         card = cards.nth(i)
         card.scroll_into_view_if_needed()
         card.click()
         page.wait_for_timeout(2000)
 
+        description = page.locator("div.jobs-description__content").inner_text()
+
         jobs.append({
             "platform": "LinkedIn",
+            "description": description.strip(),
             "link": page.url
         })
 

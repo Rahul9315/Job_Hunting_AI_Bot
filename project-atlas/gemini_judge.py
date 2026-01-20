@@ -13,9 +13,10 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 PROMPT = """
 You are a senior technical recruiter in Ireland.
 
-Open this job link and analyze it.
+You will be given a JOB DESCRIPTION text.
+Extract the job details and decide if Rahul should apply.
 
-Return ONLY valid JSON in this format  Do not include any explanation or markdown:
+Return ONLY valid JSON in this format. Do not include any explanation or markdown:
 
 {
   "title": "",
@@ -29,13 +30,24 @@ Return ONLY valid JSON in this format  Do not include any explanation or markdow
 }
 
 Rules:
-- apply = true only if suitable for Rahul
-- Rahul is a junior software developer in Ireland
-- He needs visa sponsorship
-- Focus on entry level / graduate / junior roles
-- Prefer Python, JavaScript, web, backend, AI
-- If visa is not mentioned, infer from company size & wording
+- Extract title, company and location ONLY from the job description text
+- The role MUST be in software development or software engineering
+- Reject roles that are:
+  - Data Engineer
+  - Data Scientist
+  - Cybersecurity
+  - IT Support / Helpdesk / SysAdmin
+  - Network Engineer
+  - DevOps only roles
+- Prefer roles that mention:
+  - Python, JavaScript, TypeScript, React, Node.js, Backend, Web, API, Cloud, AI, ML
+- Entry level, Graduate or Junior roles are ideal, but accept mid-level if skills match
+- Visa sponsorship is NOT required for approval
+- Apply = true if the role is software development and matches Rahul’s skills
+- Apply = false only if the role is clearly not software engineering
+
 """
+
 
 def run():
     with open("data/cv.json") as f:
@@ -48,7 +60,15 @@ def run():
 
     
     for job in jobs[:2]:
-        prompt = f"{PROMPT}\n\nCV:\n{json.dumps(cv, indent=2)}\n\nJOB LINK:\n{job['link']}"
+        prompt = f"""{PROMPT}
+
+        CV:
+        {json.dumps(cv, indent=2)}
+
+        JOB DESCRIPTION:
+        {job['description']}
+        """
+
         response = client.models.generate_content(
             model="models/gemini-3-flash-preview",
             contents=[{"role": "user", "parts":[{"text": prompt}]}]

@@ -1,102 +1,27 @@
 [
   {
     "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4341592324&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
+    "description": "About the job\n\nCore Optimisation is a rapidly growing Digital Marketing and Transformation Agency. We are seeking a Full Stack Software Engineer to join our team to work on a new product build. This platform will integrate data from multiple sources. This role will focus on building secure, modular, and scalable backend services that will handle data ingestion, processing, and storage. \n\n\n\n\nKey Responsibilities: \n\n\n\n\nTechnical Design & Development: Lead backend development with a focus on designing a modular, scalable architecture using Microsoft Azure services. \nData Integration: Implement secure data collection from multiple sources via APIs, Webhook integration, ensuring high data integrity. \nData Anonymisation and Security: Work with data sanitization and anonymization to handle sensitive PII, ensuring compliance with GDPR and data protection standards. \nDatabase Management: Manage and optimize Azure Cosmos DB for efficient storage and retrieval, with attention to data schema design and query optimization. \nCollaboration: Work closely with cross-functional teams including frontend engineers, data analysts, and project managers. \n\n\n\n\nRequired Qualifications: \n\n\n\n\nEducation: Bachelor\u2019s or Master\u2019s in Computer Science or a related field. \nExperience: Minimum 5+ years of experience in full stack development, with expertise in Next.js, shadcn/ui, familiarity with Azure-based services. \nTechnical Skills: Proficiency in Azure Functions, Azure API Management, Cosmos DB, CI/CD pipelines, Bicep \nSecurity & Compliance: Solid understanding of GDPR and experience in data security, anonymization, and hashing techniques, software security scanning techniques. \nProblem Solving: Strong analytical skills, with experience in troubleshooting complex integrations and optimizing backend performance. \nCommunication: Excellent written and verbal communication skills, with the ability to document processes and procedures. \n\n\n\n\nPreferred: \n\n\n\n\nExperience with business intelligence platforms and familiarity with cloud-based architecture. \nPrior experience working in a digital transformation or tourism industry context.",
     "link": "https://www.linkedin.com/jobs/search/?currentJobId=4353715994&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
   },
   {
     "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4362460584&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+    "description": "About the job\n\nOverview\n\n\n\n\nA leading global financial institution is seeking an experienced SQL Developer to join its Dublin technology team. The successful candidate will work on high-availability data platforms supporting trading, risk, compliance, and regulatory reporting functions. This role involves complex data transformation, optimisation, and collaboration with cross-functional teams in a fast-paced enterprise environment.\n\n\n\n\nKey Responsibilities\n\n\n\n\nDesign, develop, and optimise complex SQL queries, stored procedures, functions, and ETL processes across large financial datasets.\nSupport and enhance enterprise data solutions.\nWork closely with business stakeholders to gather and refine data requirements.\nCreate robust data validation frameworks and ensure data quality across critical systems.\nOptimise database performance, indexing strategies, and query execution plans.\nCollaborate with application developers, analysts, and data engineers on end-to-end project delivery.\nAssist in the migration and modernisation of legacy database systems where required.\nProvide production support for high-priority financial systems when needed.\n\n\n\n\nRequired Skills & Experience\n\nHands-on SQL development experience (T-SQL, PL/SQL, or equivalent).\nProven ability working with large, complex datasets in an enterprise or financial environment.\nStrong experience with RDBMS technologies such as SQL Server, Oracle, or PostgreSQL.\nExcellent understanding of query optimisation, indexing, performance tuning.\nExperience with ETL tools \nStrong understanding of data governance and security standards in regulated environments.\nExcellent analytical, communication, and problem-solving skills.\n\n\n\n\nThis is a daily rate contract role involving three days per week on site.",
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4343147110&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
   },
   {
     "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4348546873&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4353795613&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
+    "description": "About the job\n\nSoftware Developer \u2013 Elasticsearch / Kibana \n\nLocation: Remote role (EU Countries)\n\nEmployment Type: Freelance contract with extensions\n\nLanguage Spoken: English and German (Must)\n\n\n\n\nOverview:\n\nFor an exciting enterprise project in the energy sector, we are looking for an experienced Software Developer with strong Elasticsearch and Kibana expertise to support the development of a modern data and monitoring landscape.\n\nThis role requires a hands-on Elastic Stack specialist who can independently design, implement, and further develop Elasticsearch-based solutions in a complex, regulated environment.\n\n\n\n\nResponsibilities:\n\n\n\n\nData Integration & Interfaces\n\nIntegrate archive systems, DMS, and other enterprise source systems via interfaces and pipelines\nBuild and maintain structured data flows into Elasticsearch\nPrepare and provide data for analysis and dashboards in Kibana\n\nMonitoring & Data Quality\n\nDesign and develop modern monitoring dashboards in Kibana\nIdentify, analyse, and control issues in data and document flows\nCreate correlation logic to connect events across multiple log sources\n\nElastic Cluster Design & Development\n\nDesign the technical concept and architecture of Elasticsearch clusters\nIndependently implement system connections and integrations\nContinuously improve cluster setup and data architecture based on requirements\n\nSecurity & Infrastructure\n\nAnalyse data sources and technical connectivity options\nConsider security aspects such as API management, access rights, and firewall approvals\n\nData Processing\n\nClean, transform, and preprocess log and event data\nLoad data into Elasticsearch with quality and consistency checks\n\n\n\n\nRequirements:\n\nStrong hands-on experience with Elasticsearch, including setup and operation of Elastic clusters\nVery good practical experience with Kibana\nExperience working with Azure DevOps (repos, pipelines, boards, deployments)\nExperience integrating enterprise systems (e.g. archive tools, DMS, SAP-based systems like SAP PO, API platforms)\nStrong skills in data cleansing and preprocessing\nAnalytical mindset with good business understanding\nIndependent, structured, and delivery-focused working style",
     "link": "https://www.linkedin.com/jobs/search/?currentJobId=4353854807&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
   },
   {
     "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4351801223&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
+    "description": "About the job\n\nCompany Description\n\nAt Glitch, our mission is to bring simplicity to complex business processes. Our innovative AI engine empowers high-growth companies to acquire customers more effectively at scale by streamlining strategy development, campaign creation, and content optimisation. By leveraging AI and automation, Glitch provides cutting-edge solutions to drive success. We specialise in helping businesses achieve their goals through efficiency and intelligent tools.\n\n\n\n\nThe Role\n\nAs an Engineering Intern, you\u2019ll work closely with our CTO and core engineering team on real production systems \u2014 not side projects. This role sits at the intersection of product, data, and AI systems, and is designed for someone who wants to deeply understand how modern AI-driven products are built, tested, and improved in the real world.\n\nYou\u2019ll help us ship better features, learn how agentic systems behave in production, and contribute directly to improving customer outcomes.\n\n\n\n\nWhat You\u2019ll Work On\n\nYou\u2019ll be involved across the product lifecycle, including:\nTesting new features end-to-end and helping identify edge cases before release\nAnalysing campaign, product, and system data to understand performance and failure modes\nSupporting experiments to improve agent and prompt behaviour\nHelping turn insights from data and users into shipped product improvements\nWorking alongside engineers to debug issues and improve system reliability\nThis is a hands-on role with real responsibility and real impact.\n\n\n\n\nWhat We\u2019re Looking For\n\nYou don\u2019t need to tick every box - curiosity, ownership, and learning speed matter most.\n\n\n\n\nStudying computer science, engineering, data, or a related field\nStrong problem-solving instincts and systems thinking\nComfort working with data (even if it\u2019s messy or incomplete)\nInterest in AI systems, agents, and how models behave in production\nAbility to communicate clearly and ask good questions\n\n\n\n\nWhy This Role Is Different\n\nYou\u2019ll work on a live, revenue-generating product used by real B2B companies\nYou\u2019ll learn how AI products actually operate beyond demos and notebooks\nYou\u2019ll work closely with senior engineers and leadership, not in a silo\nYou\u2019ll see how engineering, product, and customer feedback connect in practice\n\n\n\n\nGet in touch\n\nIf you\u2019re interested please send an email with your resume / portfolio of work to operations@glitchads.ai\n\n\n\n\nGlitch is early. That means fewer rigid processes, more ownership, and more room to grow quickly. If you\u2019re someone who thrives in ambiguity, wants exposure to how startups really work, and is excited by the idea of AI reshaping marketing, we\u2019d love to hear from you.",
     "link": "https://www.linkedin.com/jobs/search/?currentJobId=4353903793&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
   },
   {
     "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4359090254&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4358218862&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4352984992&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4358580308&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4353912265&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4325841236&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4363570330&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4351719563&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4342082892&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4351312575&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4328485732&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4358536381&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4353815124&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4355012653&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4362461192&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4353441058&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
-  },
-  {
-    "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4360496282&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+    "description": "About the job\n\nJob Title: AI Engineer \n\nEmployment Type: Full-Time \n\nLocation: Nova UCD Dublin\n\n\n\n\nAbout Better Futures Limited\n\nBetter Futures is transforming engineering productivity with EVA \u2014 the first AI Assistant SaaS platform built specifically to free engineers from paperwork. EVA automates documentation, verification, and knowledge retrieval so teams can focus on high-value engineering work. \n\nFounded by Anthony Mc Loughlin and headquartered in Dublin\u2019s NovaUCD, the company has secured early traction with leading manufacturers such as ABB and Sensata Technologies, delivering measurable impact in highly regulated industries. Better Futures has recently brought on new investors and is expanding its team as it scales into a \u20ac20B+ global market.\n\n\n\n\nThe Position \n\nWe are hiring a hands-on AI Engineer early in their career who is passionate about applying AI to real customer challenges. This role is highly implementation-focused: building, deploying, and improving AI models and Retrieval-Augmented Generation (RAG) pipelines for real-world engineering applications.\n\nYou are someone who loves experimenting, iterating fast, and shipping AI that actually gets used. You take ownership, learn quickly, and thrive in a startup environment where your work has immediate impact.\n\n\n\n\nKey Responsibilities\n\n\n\n\n AI Engineering & Architecture\n\nDesign and optimize RAG architectures for high-quality retrieval and contextual reasoning.\nBuild and maintain AI pipelines, embedding systems, and model integrations with user friendly UI \nWork closely with the product development team to integrate new pipelines, assistants, and features into our core SaaS platform\u2014enabling scale and continuous improvement.\n\n \n\n Pre-Sales & Customer Success \n\nBuild prototypes and novel assistants to unlock new use cases and clients\nSupport sales by leading demos, evaluations, and Proofs of Value (PoVs)\nUnderstand and document customer requirements.\nLead strategic customer projects, delivering production-ready assistants\nDrive usage and adoption, ensuring successful rollout and measurable customer impact.\n\n\n\n\nRequirements\n\n\n\n\n1-3 years hands-on experience building AI pipelines with RAG frameworks (e.g. LangChain, LlamaIndex, Weaviate, Milvus, Pinecone).\nStrong skills in PyTorch, TensorFlow, Hugging Face, and vector databases.\nDeep understanding of embedding models, prompt engineering, and data curation.\nCloud development experience especially Microsoft Azure.\nExcellent communication skills to collaborate with customers and internal teams.\nStartup mindset: hands-on, fast-moving, adaptable, and eager to learn.\n\n\n\n\nNice to Have / Bonus\n\n\n\n\nExperience deploying AI in engineering, manufacturing, or technical domains.\nExperience in fine-tuning LLMs (LoRA, QLoRA, PEFT, instruction tuning, RLHF).\nbubble.io experience \n\n\n\n\nWhat We Offer\n\n\n\n\nCompetitive salary and equity options\nA unique opportunity to work at the forefront of AI to revolutionize manufacturing, engineering and seeing immediate impact in customer workflows.\nAn exciting pioneering team and company, with huge upside for career growth and learning \nA great culture and environment, working in the heart of Dublin\u2019s startup community at Nova UCD \n\n\n\n\nIf you are excited, please send your CV and a cover letter explaining why you are the ideal candidate for this role via LinkedIn or to info@betterfutures.ai.",
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4341592324&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
   }
 ]
