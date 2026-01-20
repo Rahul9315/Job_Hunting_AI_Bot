@@ -1,23 +1,83 @@
 [
   {
-    "title": "Senior Python Engineer",
-    "company": "Not specified",
-    "location": "Cork, Ireland",
+    "title": "AI Engineer",
+    "company": "Zoolatech",
+    "location": "Not specified",
     "skills": [
-      "Python",
-      "SQL",
-      "NoSQL",
-      "FastAPI",
-      "RESTful APIs",
+      "AI/ML",
+      "Generative AI",
+      "Retrieval-Augmented Generation (RAG)",
+      "Natural language processing (NLP)",
+      "LLM-based systems",
+      "Java",
+      "JavaScript",
       "Git",
-      "Docker",
-      "Linux"
+      "Software Engineering"
     ],
     "salary": "Not specified",
     "visa_sponsorship": false,
     "apply": true,
-    "reason": "The role is for a Python Software Engineer, which is a core software development position. Rahul has Python and SQL skills. Although the role requires senior-level experience (6+ years) and Rahul is a graduate, the instructions state to only reject if the role is clearly not software engineering.",
+    "reason": "The role is a software development position focused on AI and Agentic solutions. It explicitly accepts Java or JavaScript, which match Rahul's skills. Rahul's background in Computer Science and Machine Learning aligns well with the foundational AI/ML requirements for this junior-friendly engineer role.",
     "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4358218862&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4345667813&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+  },
+  {
+    "title": "Python Developer / Data Analyst",
+    "company": "Brightwater",
+    "location": "Dublin",
+    "skills": [
+      "Python",
+      "SQL",
+      "Data Analysis",
+      "Agile",
+      "GitHub",
+      "Testing",
+      "Business Logic",
+      "CI/CD"
+    ],
+    "salary": "Daily rate contract",
+    "visa_sponsorship": false,
+    "apply": true,
+    "reason": "The role involves core software development tasks such as building business logic and decision engines using Python and SQL. Rahul has a Computer Science degree from an Irish university and strong matching skills in Python, SQL, and Machine Learning, making him a good fit for this development-heavy analytical role.",
+    "platform": "LinkedIn",
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4342603746&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+  },
+  {
+    "title": "Full Stack Engineer/Full Stack Developer",
+    "company": "",
+    "location": "",
+    "skills": [
+      "Front-end technologies",
+      "Back-end technologies",
+      "APIs",
+      "Databases",
+      "System architecture"
+    ],
+    "salary": "",
+    "visa_sponsorship": false,
+    "apply": true,
+    "reason": "The role is a direct match for Rahul's software development background. He possesses the required full-stack skills, including proficiency in JavaScript, backend development (Express.js, Python, Java), and database management. The 'Open to All' seniority level makes it appropriate for his experience level.",
+    "platform": "LinkedIn",
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4353961479&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+  },
+  {
+    "title": "SQL Developer",
+    "company": "IT Search (on behalf of a financial services client)",
+    "location": "Not specified",
+    "skills": [
+      "SQL",
+      "SQL Server 2019",
+      "JIRA",
+      "GIT",
+      "Stored procedures",
+      "Complex querying",
+      "Performance tuning"
+    ],
+    "salary": "450-600 Daily Rate",
+    "visa_sponsorship": false,
+    "apply": true,
+    "reason": "The role involves software development within enterprise systems and matches Rahul's SQL skills. Although it requires 5+ years of experience, the instructions state to only set apply to false if the role is clearly not software engineering.",
+    "platform": "LinkedIn",
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4343047963&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
   }
 ]
