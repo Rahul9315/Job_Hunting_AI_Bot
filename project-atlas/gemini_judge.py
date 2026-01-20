@@ -15,7 +15,7 @@ You are a senior technical recruiter in Ireland.
 
 Open this job link and analyze it.
 
-Return ONLY valid JSON in this format:
+Return ONLY valid JSON in this format  Do not include any explanation or markdown:
 
 {
   "title": "",
@@ -46,7 +46,7 @@ def run():
 
     approved = []
 
-    """
+    
     for job in jobs[:2]:
         prompt = f"{PROMPT}\n\nCV:\n{json.dumps(cv, indent=2)}\n\nJOB LINK:\n{job['link']}"
         response = client.models.generate_content(
@@ -89,7 +89,7 @@ def run():
     
     # real Gemini call goes here later 
     # this for loop above this comment has to be removed
-     
+    """
 
     os.makedirs("data", exist_ok=True)
     with open("data/jobs_filtered.json", "w", encoding="utf-8") as f:

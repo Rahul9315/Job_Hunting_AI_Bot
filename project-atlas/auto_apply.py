@@ -5,14 +5,35 @@ import os
 from tracker import log
 
 def login_linkedin(page):
-    page.goto("https://www.linkedin.com/login")
+    os.makedirs("debug_login", exist_ok=True)
+
+    page.goto("https://www.linkedin.com")
+    page.wait_for_timeout(8000)
+    #page.screenshot(path="debug_login/1_home.png", full_page=True)
+
+    """
+    # Click Sign in (homepage modal)
+    page.locator("text=Sign in").first.click()
+    page.wait_for_timeout(6000)
+    page.screenshot(path="debug_login/2_after_signin.png", full_page=True)
+    """
+
+# Click Sign in with Email
+    page.locator("text=Sign in with Email").first.click()
+    page.wait_for_timeout(6000)
+    #page.screenshot(path="debug_login/3_email_click.png", full_page=True)
+
+    # Fill credentials
     page.fill("input#username", os.getenv("LINKEDIN_EMAIL"))
     page.fill("input#password", os.getenv("LINKEDIN_PASSWORD"))
-    page.screenshot(path="Linkedin_login.png", full_page=True)
-    page.click("button[type=submit]")
-    page.wait_for_timeout(12000)
-    page.context.storage_state(path="linkedin_cookies.json")
+    #page.screenshot(path="debug_login/4_filled.png", full_page=True)
 
+    # Submit
+    page.click("button[type=submit]")
+    page.wait_for_timeout(15000)
+    #page.screenshot(path="debug_login/5_loggedin.png", full_page=True)
+
+    page.context.storage_state(path="linkedin_cookies.json")
 
 def load_context(browser):
     if os.path.exists("linkedin_cookies.json"):

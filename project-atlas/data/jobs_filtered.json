@@ -1,34 +1,41 @@
 [
   {
-    "title": "Junior Software Engineer",
-    "company": "Test Company Ltd",
-    "location": "Ireland",
+    "title": "Software Engineer I",
+    "company": "HubSpot",
+    "location": "Dublin, Ireland",
     "skills": [
-      "Python",
+      "Java",
       "JavaScript",
-      "Docker"
+      "React",
+      "SQL",
+      "Distributed Systems",
+      "Python"
     ],
-    "salary": "\u20ac35,000 - \u20ac45,000",
+    "salary": "Not specified",
     "visa_sponsorship": true,
     "apply": true,
-    "reason": "Entry level role matching Rahul's profile",
+    "reason": "HubSpot's 'Engineer I' is specifically designed for new graduates and juniors. As a large multinational, they are a registered sponsor for Critical Skills Employment Permits in Ireland. Rahul's background in Java, JavaScript, and his TU Dublin degree make him a strong candidate for this entry-level pipeline.",
     "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4364382406&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4341592324&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
   },
   {
     "title": "Junior Software Engineer",
-    "company": "Test Company Ltd",
-    "location": "Ireland",
+    "company": "Mastercard",
+    "location": "Dublin, Ireland",
     "skills": [
-      "Python",
-      "JavaScript",
-      "Docker"
+      "Java",
+      "Spring Boot",
+      "RESTful APIs",
+      "SQL",
+      "Cloud Computing",
+      "Agile",
+      "Object-Oriented Programming"
     ],
-    "salary": "\u20ac35,000 - \u20ac45,000",
+    "salary": "Not disclosed",
     "visa_sponsorship": true,
     "apply": true,
-    "reason": "Entry level role matching Rahul's profile",
+    "reason": "This is a perfect entry-level match for Rahul's Java background and TU Dublin degree. Mastercard is a large multinational known for providing visa sponsorship for high-potential technical talent in Ireland.",
     "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4364203279&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4353715994&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
   }
 ]
