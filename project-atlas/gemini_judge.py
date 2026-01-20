@@ -6,47 +6,13 @@ from google import genai
 
 load_dotenv()
 
-TEST_MODE = True
-
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-PROMPT = """
-You are a senior technical recruiter in Ireland.
+def load_prompt():
+    with open("prompts/gemini_judge.txt", "r", encoding="utf-8") as f:
+        return f.read()
 
-You will be given a JOB DESCRIPTION text.
-Extract the job details and decide if Rahul should apply.
-
-Return ONLY valid JSON in this format. Do not include any explanation or markdown:
-
-{
-  "title": "",
-  "company": "",
-  "location": "",
-  "skills": [],
-  "salary": "",
-  "visa_sponsorship": true,
-  "apply": true,
-  "reason": ""
-}
-
-Rules:
-- Extract title, company and location ONLY from the job description text
-- The role MUST be in software development or software engineering
-- Reject roles that are:
-  - Data Engineer
-  - Data Scientist
-  - Cybersecurity
-  - IT Support / Helpdesk / SysAdmin
-  - Network Engineer
-  - DevOps only roles
-- Prefer roles that mention:
-  - Python, JavaScript, TypeScript, React, Node.js, Backend, Web, API, Cloud, AI, ML
-- Entry level, Graduate or Junior roles are ideal, but accept mid-level if skills match
-- Visa sponsorship is NOT required for approval
-- Apply = true if the role is software development and matches Rahul’s skills
-- Apply = false only if the role is clearly not software engineering
-
-"""
+PROMPT = load_prompt()
 
 
 def run():
@@ -59,7 +25,7 @@ def run():
     approved = []
 
     
-    for job in jobs[:2]:
+    for job in jobs[:10]: ## change this like to  if u have api paid version else keep it at jobs[:10] ->  for job in jobs: 
         prompt = f"""{PROMPT}
 
         CV:
@@ -88,6 +54,8 @@ def run():
             approved.append(data)
 
     """
+
+    TEST_MODE = True
          
     for job in jobs[:2]:
 

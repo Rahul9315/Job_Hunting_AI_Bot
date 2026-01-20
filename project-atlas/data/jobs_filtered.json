@@ -1,25 +1,23 @@
 [
   {
-    "title": "Full Stack Software Engineer",
-    "company": "Core Optimisation",
-    "location": "",
+    "title": "Senior Python Engineer",
+    "company": "Not specified",
+    "location": "Cork, Ireland",
     "skills": [
-      "Next.js",
-      "shadcn/ui",
-      "Azure Functions",
-      "Azure API Management",
-      "Cosmos DB",
-      "CI/CD",
-      "Bicep",
-      "GDPR",
-      "Data security",
-      "API Management"
+      "Python",
+      "SQL",
+      "NoSQL",
+      "FastAPI",
+      "RESTful APIs",
+      "Git",
+      "Docker",
+      "Linux"
     ],
-    "salary": "",
+    "salary": "Not specified",
     "visa_sponsorship": false,
     "apply": true,
-    "reason": "This is a software engineering role focused on full-stack development and backend services. Although the role specifies 5+ years of experience and an Azure stack, it falls within Rahul's field of software development, and the rules dictate applying unless the role is clearly not software engineering.",
+    "reason": "The role is for a Python Software Engineer, which is a core software development position. Rahul has Python and SQL skills. Although the role requires senior-level experience (6+ years) and Rahul is a graduate, the instructions state to only reject if the role is clearly not software engineering.",
     "platform": "LinkedIn",
-    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4344112071&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
+    "link": "https://www.linkedin.com/jobs/search/?currentJobId=4358218862&f_AL=true&keywords=Junior%20Software%20Engineer%20Ireland&location=Ireland"
   }
 ]

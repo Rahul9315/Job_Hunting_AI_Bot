@@ -1,22 +1,18 @@
-from playwright.sync_api import sync_playwright
-import os
-from dotenv import load_dotenv
-
-
-load_dotenv()
-
+from job_scraper import run as scrape_jobs
+from gemini_judge import run as judge_jobs
+from linkedin_apply import run as apply_jobs
 
 def main():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context()
-        page = context.new_page()
-        page.goto("https://www.linkedin.com")
-        page.wait_for_timeout(5000)
-        #page.screenshot(path="debug.png", full_page=True)
-        print("LinkedIn opened successfully")
-        browser.close()
+    print(" \n\n Scraping JoBs \n\n ")
+    scrape_jobs()
 
+    print(" \n🧠 Judging jobs with Gemini...\ ")
+    judge_jobs()
+
+    print(" \n🚀 Applying on LinkedIn...\ ")
+    apply_jobs()
+
+    print(" \n✔ Atlas pipeline completed successfully\ ")
 
 if __name__ == "__main__":
     main()

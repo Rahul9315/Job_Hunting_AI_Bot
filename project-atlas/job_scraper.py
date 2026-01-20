@@ -92,7 +92,7 @@ def scrape_linkedin(page, query):
     
     jobs = []
 
-    for i in range(min(5, count)):
+    for i in range(min(20, count)):
         card = cards.nth(i)
         card.scroll_into_view_if_needed()
         card.click()
