@@ -37,10 +37,12 @@ Built for developers who want interviews, not browser fatigue.
 * LinkedIn account
 * Google account (for Gemini API key)
 
+* Note : If you have paid version of Gemini API then make changes in `gemini_judge.py` line 28 from `for job in jobs[:10] ->  for job in jobs:` as free version will only allow to scan 10 jobs per day
+
 ### Note:
 
 * Keep your CV as cv.pdf while replacing the one already their
-* Expecting you LinkedIn is already Trained like most of the field is already filled by LinkedIn
+* Expecting your LinkedIn is already Trained like most of the field is already filled by LinkedIn
 
 ---
 
@@ -118,7 +120,7 @@ SEARCHES = [
 
 ### Change AI Judging Prompt
 
-Edit `promts/gemini_judge.txt`:
+Edit `promts/gemini_judge.txt` as strict as you wanted but  only make changes in the rules:
 
 ```
 PROMPT = """
@@ -149,7 +151,7 @@ Reply only YES or NO.
 
 ## 📊 Output
 
-`data/applied.xlsx`
+* `data/applied.xlsx`
 
 | Date | Platform | Company | Role | Location | Status | Note | Link |
 | ---- | -------- | ------- | ---- | -------- | ------ | ---- | ---- |
