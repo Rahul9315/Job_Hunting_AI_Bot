@@ -37,7 +37,7 @@ Built for developers who want interviews, not browser fatigue.
 * LinkedIn account
 * Google account (for Gemini API key)
 
-* Note : If you have paid version of Gemini API then make changes in `gemini_judge.py` line 28 from `for job in jobs[:10] ->  for job in jobs:` as free version will only allow to scan 10 jobs per day
+* Note : If you have paid version of Gemini API then make changes in `gemini_judge.py` line 28 from `for job in jobs[:10]` ->  `for job in jobs:` as free version will only allow to scan 10 jobs per day
 
 ### Note:
 
@@ -54,6 +54,8 @@ Click **Fork** on GitHub → clone your fork:
 
 ```
 git clone https://github.com/Rahul9315/Job_Hunting_AI_Bot.git
+```
+```
 cd project-atlas
 ```
 
