@@ -91,7 +91,7 @@ def run():
             human_sleep(3, 6)
             human_scroll(page)
 
-            page.screenshot(path="debug0/1.png", full_page=True)
+            #page.screenshot(path="debug0/1.png", full_page=True)
 
             easy_apply = page.locator("button.jobs-apply-button")
 
@@ -105,53 +105,72 @@ def run():
 
             # Wait for Easy Apply modal
             page.wait_for_selector("div.jobs-easy-apply-modal", timeout=15000)
-            page.screenshot(path="debug0/3.png", full_page=True)
+            #page.screenshot(path="debug0/3.png", full_page=True)
 
 
             try:
-                # Auto-fill common fields if present
-                if page.locator("input[name='phoneNumber']").count():
-                    human_type(page, "input[name='phoneNumber']", os.getenv("PHONE", ""))
-                
-                page.screenshot(path="debug0/4.png", full_page=True)
+                # ---- Fill only EMPTY required inputs ----
+                required_inputs = page.locator("input[required], textarea[required]")
 
+                for i in range(required_inputs.count()):
+                    field = required_inputs.nth(i)
 
-                # Select already uploaded resume (cv.pdf)
-                if page.locator("text=cv.pdf").count():
-                    page.locator("text=cv.pdf").first.click()
-                    human_sleep(1, 2)
+                    try:
+                        if field.input_value().strip() != "":
+                            continue  # already filled, do not touch
 
+                        name = (field.get_attribute("name") or "").lower()
+                        placeholder = (field.get_attribute("placeholder") or "").lower()
 
-                # Submit flow
-                # Step engine: Next → Next → Review → Submit
-                while True:
+                        if "phone" in name or "phone" in placeholder:
+                            human_type(page, field, os.getenv("PHONE", "1"))
+                        elif "email" in name or "email" in placeholder:
+                            human_type(page, field, os.getenv("LINKEDIN_EMAIL", "1"))
+                        else:
+                            human_type(page, field, "1")
+
+                        human_sleep(1, 2)
+
+                    except:
+                        pass
+
+                # ---- Safety gate: radio buttons / dropdowns ----
+                # ---- Step engine: bounded flow ----
+                MAX_STEPS = 10
+                steps = 0
+
+                while steps < MAX_STEPS:
                     if page.locator("button:has-text('Submit')").count():
-                        page.locator("button:has-text('Submit')").click()
+                        page.locator("button:has-text('Submit')").first.click()
                         human_sleep(3, 5)
                         log(job, "Applied", "Success")
                         applied_today += 1
-                        page.screenshot(path="debug0/5.png", full_page=True)
+                        #page.screenshot(path="debug0/submit.png", full_page=True)
                         break
-
-                    elif page.locator("button[data-easy-apply-next-button]").count():
-                        page.locator("button[data-easy-apply-next-button]").click()
-                        human_sleep(3, 5)
-                        page.screenshot(path="debug0/step.png", full_page=True)
 
                     elif page.locator("button:has-text('Review')").count():
                         page.locator("button:has-text('Review')").first.click()
                         human_sleep(3, 5)
+                        #page.screenshot(path="debug0/review.png", full_page=True)
+
+                    elif page.locator("button[data-easy-apply-next-button]").count():
+                        page.locator("button[data-easy-apply-next-button]").first.click()
+                        human_sleep(3, 5)
+                        #page.screenshot(path="debug0/next.png", full_page=True)
 
                     else:
-                        log(job, "Manual Review", "Unknown step")
-                        page.screenshot(path="debug0/unknown.png", full_page=True)
                         break
 
+                    steps += 1
 
-
+                # If submit not reached
+                if steps >= MAX_STEPS:
+                    log(job, "Manual Review", "More Information Needed")
+                    #page.screenshot(path="debug0/step_limit.png", full_page=True)
+            
             except Exception as e:
                 log(job, "Manual Review", str(e))
-                page.screenshot(path="debug0/7.png", full_page=True)
+                page.screenshot(path="debug0/error.png", full_page=True)
 
 
             human_sleep(8, 14)
