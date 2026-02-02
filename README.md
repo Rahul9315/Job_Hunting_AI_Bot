@@ -1,23 +1,40 @@
 # Project Atlas 🤖
 
-### Autonomous LinkedIn Job Application Bot powered by Google Gemini
+### An Autonomous LinkedIn Job Application System
 
-Project Atlas is a fully automated job hunting system that:
+Project Atlas is an automation assistant that streamlines the job hunting workflow. Instead of manually searching and applying to dozens of roles, it helps you:
 
-* Finds jobs on LinkedIn
-* Filters them using AI (Gemini ATS-style screening)
-* Applies automatically using Easy Apply
+* Discover relevant jobs on LinkedIn
+* Filter them intelligently using AI (ATS-style screening)
+* Apply only to strong matches using Easy Apply
 * Tracks everything in Excel
 
-Built for developers who want interviews, not browser fatigue.
+Built for developers who want focused applications and better interview chances, not browser fatigue.
 
 ---
+
+## 📘 Documentation
+
+Detailed system design, architecture, and 10-day evaluation:
+
+👉 **Project Atlas Technical Documentation (PDF)**  
+https://drive.google.com/file/d/1kvqLdUSJU-d7zlAet92x81G2-AqRdxC0/view?usp=drive_link
+
+Includes:
+- Architecture diagrams
+- Pipeline design
+- ATS evaluation flow
+- Deployment results
+- System limitations & ethics
+
+---
+
 
 ## 🚀 Features
 
 * 🔍 LinkedIn Job Scraper (Playwright)
-* 🧠 AI Job Judge (Google Gemini Free Tier)
-* 🚀 Smart Easy Apply Bot (Stealth Mode)
+* 🧠 AI Job Evaluator (Google Gemini Free Tier)
+* 🚀 Smart Easy Apply Assistant (human-like interaction)
 * 📊 Application Tracker (Excel)
 * 🐳 Dockerised – works on any machine
 * ⏰ Fully schedulable (runs itself every day)
