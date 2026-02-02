@@ -18,7 +18,7 @@ Built for developers who want focused applications and better interview chances,
 Detailed system design, architecture, and 10-day evaluation:
 
 👉 **Project Atlas Technical Documentation (PDF)**  
-https://drive.google.com/file/d/1kvqLdUSJU-d7zlAet92x81G2-AqRdxC0/view?usp=drive_link
+[https://drive.google.com/file/d/1kvqLdUSJU-d7zlAet92x81G2-AqRdxC0/view?usp=drive_link](https://drive.google.com/file/d/1WNk7in2oLGugvZLUCbPrzz9lk4t2laRC/view?usp=drive_link)
 
 Includes:
 - Architecture diagrams
